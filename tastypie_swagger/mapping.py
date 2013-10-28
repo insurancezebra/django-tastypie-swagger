@@ -313,7 +313,7 @@ class ResourceSwaggerMapping(object):
                     }
                 else:
                     extra_api = {
-                        'path': "%s/%s/" % (self.get_resource_base_uri(), extra_action.get('name')),
+                        'path': "%s%s/" % (self.get_resource_base_uri(), extra_action.get('name')),
                         'operations': []
                     }
                 operation = self.build_extra_operation(extra_action)
